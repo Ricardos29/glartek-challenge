@@ -53,25 +53,4 @@ router.get('/temperature/:location', (req, res) => {
     }
 });
 
-router.get('/stats', (req, res) => {
-    res.send(appCache.getStats());
-});
-
 module.exports = router;
-
-// router.get('/temperatures/all', async (req, res ) => {
-
-//     const temp = await cities.forEach(city => {
-//         const url = `http://api.openweathermap.org/data/2.5/weather?id=${city.id}&APPID=${API_KEY}`;
-        
-//         fetch(url)
-//         .then(response => response.json())
-//         .then(data => {
-//             city.name = 'ola';
-//             console.log(city.name)
-//         })
-//     });
-
-//     res.end(JSON.stringify(cities));
-    
-// })
