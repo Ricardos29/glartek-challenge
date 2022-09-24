@@ -9,27 +9,22 @@ const cities = [
     {
         'id': '2267056', 
         'name': 'Lisboa',
-        'data' : []
     }, 
     {
         'id': '2267094', 
         'name': 'Leiria',
-        'data' : []
     }, 
     {
         'id': '2740636', 
         'name': 'Coimbra',
-        'data' : []
     }, 
     {
         'id': '2735941', 
         'name': 'Porto',
-        'data' : []
     }, 
     {
         'id': '2268337', 
         'name': 'Faro',
-        'data' : []
     }, 
 ]
 
@@ -43,7 +38,7 @@ router.get('/temperature/:location', (req, res) => {
     else
     {
         const url = `http://api.openweathermap.org/data/2.5/weather?id=${req.params.location}&APPID=${API_KEY}`;
-        
+        console.log("Get temperature from OpenWeather API");
         fetch(url)
         .then(response => response.json())
         .then(data => {
