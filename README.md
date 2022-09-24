@@ -3,8 +3,8 @@
 - App developed with Node.JS and React that displays weather conditions captured by OpenWeatherMap API. Divided between backend and frontend. Backend gets data from OpenWeatherMap API and sends to frontend. Frontend guarantees that weather conditions and location are displayed on the page.
 # Backend
 - To run backend: (execute on terminal on backend folder)
-  - npm install (first time after cloning project)
-  - npm run server (every time to run project)
+  - **npm install** (first time after cloning project)
+  - **npm run server** (every time to run project)
 - Routes: /temperature/{location}
 - Possible locations: 
   - 2267056 (Lisboa)
@@ -18,8 +18,8 @@
 
 # Frontend
 - To run frontend: (execute on terminal on frontend folder)
-  - npm install (first time after cloning project)
-  - npm start (every time to run project)
+  - **npm install** (first time after cloning project)
+  - **npm start** (every time to run project)
 - List of locations available: 
   - Lisboa (2267056)
   - Leiria (2267094)
