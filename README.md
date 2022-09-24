@@ -1,6 +1,6 @@
 # Glartek Challenge
 # Description
-- App that displays weather conditions captured by OpenWeatherMap API. Divided between backend and frontend. Backend gets data from OpenWeatherMap API and sends to frontend. Frontend guarantees that weather conditions and location are displayed on the page.
+- App developed with Node.JS and React that displays weather conditions captured by OpenWeatherMap API. Divided between backend and frontend. Backend gets data from OpenWeatherMap API and sends to frontend. Frontend guarantees that weather conditions and location are displayed on the page.
 # Backend
 - To run backend: npm run server (execute on terminal on backend folder)
 - Routes: /temperature/{location}
