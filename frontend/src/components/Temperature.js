@@ -47,16 +47,16 @@ function Temperature() {
         },
     ]
     
-    useLayoutEffect(() => { // Call fetchTemperature when start app
+    useLayoutEffect(() => { // Call changeLocation when start app
         changeLocation(location);
     }, []);
 
-    useEffect(() => { // Call fetchTemperature when start app
+    useEffect(() => {
         const interval = setInterval(() => {
             changeLocation(location);
         }, 1800000);
 
-        return () => clearInterval(interval); // Call fetchTemperature 30 in 30 minutes
+        return () => clearInterval(interval); // Call changeLocation 30 in 30 minutes
     }, [location]);
 
     const changeLocation = async (value) => { // Get temperature from backend of another location
